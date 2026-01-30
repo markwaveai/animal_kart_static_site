@@ -76,11 +76,11 @@ const Services = () => {
             <Navbar />
 
             {/* Hero Section */}
-            
+
 
             {/* Blue Tech Operations Header */}
             <section className="relative py-20 md:py-32 bg-[#0B1120] overflow-hidden flex items-center justify-center min-h-[50vh] mb-12">
-                
+
                 {/* Background Grid & Glow */}
                 <div className="absolute inset-0">
                     <div className="absolute inset-0 bg-[linear-gradient(to_right,#22c55e20_1px,transparent_1px),linear-gradient(to_bottom,#22c55e20_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
@@ -88,15 +88,15 @@ const Services = () => {
                 </div>
 
                 <div className="relative z-10 container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
-                    
+
                     {/* Left: Text Content */}
                     <div className="text-center md:text-left mt-12 md:mt-0">
-                         {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-cyan-400 text-xs font-bold tracking-widest uppercase mb-6 animate-in slide-in-from-bottom-4 duration-700">
+                        {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-cyan-400 text-xs font-bold tracking-widest uppercase mb-6 animate-in slide-in-from-bottom-4 duration-700">
                             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
                             Premium Tools
                         </div> */}
                         <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight leading-none animate-in slide-in-from-bottom-8 duration-700 delay-100">
-                           SERVICES
+                            SERVICES
                             {/* OPERATIONAL <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">EXCELLENCE</span> */}
                         </h1>
                         <p className="text-gray-300 text-lg md:text-xl max-w-lg mx-auto md:mx-0 leading-relaxed animate-in slide-in-from-bottom-8 duration-700 delay-200">
@@ -106,7 +106,7 @@ const Services = () => {
 
                     {/* Right: Electric Animated Graphics (Gears & Shield) */}
                     <div className="relative h-[400px] w-full flex items-center justify-center">
-                        
+
                         {/* Rotating Gear 1 (Large) */}
                         <div className="absolute right-10 md:right-20 top-1/2 -translate-y-1/2 w-64 h-64 border-[4px] border-dashed border-green-500/30 rounded-full animate-spin-slow flex items-center justify-center">
                             <div className="absolute inset-0 rounded-full border border-green-500/20"></div>
@@ -114,7 +114,7 @@ const Services = () => {
 
                         {/* Rotating Gear 2 (Small) */}
                         <div className="absolute right-40 md:right-52 top-1/3 w-32 h-32 border-[4px] border-dashed border-green-400/40 rounded-full animate-spin-reverse-slow flex items-center justify-center">
-                             <div className="w-2 h-2 bg-green-400 rounded-full"></div>
+                            <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                         </div>
 
                         {/* Central Shield/Check Icon */}
@@ -130,7 +130,7 @@ const Services = () => {
                             </div>
                         </div>
 
-                         {/* Floating Particles */}
+                        {/* Floating Particles */}
                         <div className="absolute right-0 top-20 w-3 h-3 bg-green-400 rounded-full animate-bounce delay-700"></div>
                         <div className="absolute right-60 bottom-20 w-2 h-2 bg-green-400 rounded-full animate-bounce delay-300"></div>
 
@@ -154,13 +154,13 @@ const Services = () => {
                                 </div>
                                 <h3 className="text-2xl font-bold text-gray-900 mb-3 font-bricolage group-hover:text-green-700 transition-colors">{service.title}</h3>
                                 <p className="text-gray-500 mb-6 leading-relaxed text-sm">{service.description}</p>
-                                
-                                <span className="inline-flex items-center gap-2 text-sm font-bold text-green-600 uppercase tracking-wider group-hover:gap-3 transition-all">
+
+                                <a href={service.url} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-sm font-bold text-green-600 uppercase tracking-wider group-hover:gap-3 transition-all">
                                     Open Tool
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5l6 6m0 0l-6 6M19.5 10.5H3" />
                                     </svg>
-                                </span>
+                                </a>
                             </div>
                         ))}
                     </div>
@@ -168,11 +168,11 @@ const Services = () => {
             </main>
 
             {/* Modal for Calculator */}
-            {selectedService && (
+            {/* {selectedService && (
                 <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
                     <div className="absolute inset-0 bg-black/80 backdrop-blur-md transition-opacity" onClick={() => setSelectedService(null)}></div>
                     <div className="bg-white w-full max-w-6xl h-[90vh] rounded-3xl shadow-2xl relative z-10 overflow-hidden flex flex-col animate-in fade-in zoom-in duration-300 ring-1 ring-white/20">
-                        {/* Modal Header */}
+                        {/* Modal Header *
                         <div className="flex justify-between items-center p-6 border-b border-gray-100 bg-white">
                             <div className="flex items-center gap-3">
                                 <div className="p-2 bg-green-50 rounded-lg text-green-600">
@@ -189,7 +189,7 @@ const Services = () => {
                                 </svg>
                             </button>
                         </div>
-                        {/* Modal Content - Iframe */}
+                        {/* Modal Content - Iframe *
                         <div className="flex-grow bg-gray-50">
                             <iframe
                                 src={selectedService.url}
@@ -201,7 +201,7 @@ const Services = () => {
                         </div>
                     </div>
                 </div>
-            )}
+            )} */}
 
             <Footer />
         </div>
