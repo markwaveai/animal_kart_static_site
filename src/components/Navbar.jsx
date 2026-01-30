@@ -52,101 +52,94 @@ const Navbar = () => {
 
   return (
     <>
-      <nav 
-        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-          showWhiteBg 
-            ? 'bg-white/100 backdrop-blur-md border-b border-gray-200 py-4 shadow-sm' 
+      <nav
+        className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${showWhiteBg
+            ? 'bg-white/100 backdrop-blur-md border-b border-gray-200 py-4 shadow-sm'
             : 'bg-transparent py-5'
-        }`}
+          }`}
       >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-            
-            {/* Logo */}
-            <Link to="/" className="flex items-center gap-2 z-50">
-              <img
-                src="/images/image 1.png"
-                alt="Animal Kart Logo"
-                className={`w-12 h-12 object-contain transition-all duration-300 ${showWhiteBg ? 'brightness-0' : 'brightness-0 invert'}`}
-              />
-              <span className={`font-bricolage font-bold text-xl tracking-tight hidden sm:block transition-colors duration-300 ${showWhiteBg ? 'text-black' : 'text-white'}`}>
-                Animal<span className="text-[#84CC16]">Kart</span>
-              </span>
-            </Link>
+        <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between">
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-8">
-              <div className={`flex items-center gap-1 rounded-full px-2 py-1.5 border backdrop-blur-sm transition-all duration-300 ${
-                showWhiteBg ? 'bg-black/5 border-black/5' : 'bg-white/5 border-white/5'
+          {/* Logo */}
+          <Link to="/" className="flex items-center gap-1.5 z-50">
+            <img
+              src="/images/image 1.png"
+              alt="Animal Kart Logo"
+              className={`w-12 h-12 object-contain transition-all duration-300 ${showWhiteBg ? 'brightness-0' : 'brightness-0 invert'}`}
+            />
+            <span className={`font-bricolage font-bold text-xl tracking-tight hidden sm:block transition-colors duration-300 ${showWhiteBg ? 'text-black' : 'text-white'}`}>
+              Animal<span className="text-[#84CC16]">Kart</span>
+            </span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex items-center gap-8">
+            <div className={`flex items-center gap-1 rounded-full px-2 py-1.5 border backdrop-blur-sm transition-all duration-300 ${showWhiteBg ? 'bg-black/5 border-black/5' : 'bg-white/5 border-white/5'
               }`}>
-                {navLinks.map((link) => (
-                  <Link
-                    key={link.name}
-                    to={link.path}
-                    className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 font-bricolage ${
-                      location.pathname === link.path
-                        ? 'bg-white text-black shadow-md'
-                        : showWhiteBg 
-                          ? 'text-gray-700 hover:text-black hover:bg-black/5'
-                          : 'text-white/80 hover:text-white hover:bg-white/10'
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  to={link.path}
+                  className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 font-bricolage ${location.pathname === link.path
+                      ? 'bg-white text-black shadow-md'
+                      : showWhiteBg
+                        ? 'text-gray-700 hover:text-black hover:bg-black/5'
+                        : 'text-white/80 hover:text-white hover:bg-white/10'
                     }`}
-                  >
-                    {link.name}
-                  </Link>
-                ))}
-              </div>
-
-              {/* Login Button */}
-              <a
-                href="https://animalkart.in"
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`group relative flex items-center gap-2 font-semibold text-sm pl-4 border-l transition-colors duration-300 ${
-                  showWhiteBg 
-                    ? 'text-black border-black/20 hover:text-[#84CC16]' 
-                    : 'text-white border-white/20 hover:text-[#84CC16]'
-                }`}
-              >
-                <span>Log in</span>
-                <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-                </svg>
-              </a>
+                >
+                  {link.name}
+                </Link>
+              ))}
             </div>
 
-            {/* Mobile Toggle */}
-            <button
-              onClick={() => setIsMobileMenuOpen(true)}
-              className={`lg:hidden p-2 rounded-full transition-colors duration-300 ${
-                showWhiteBg 
-                  ? 'text-black hover:bg-black/5' 
-                  : 'text-white hover:bg-white/10'
-              }`}
+            {/* Login Button */}
+            <a
+              href="https://animalkart.in"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`group relative flex items-center gap-2 font-semibold text-sm pl-4 border-l transition-colors duration-300 ${showWhiteBg
+                  ? 'text-black border-black/20 hover:text-[#84CC16]'
+                  : 'text-white border-white/20 hover:text-[#84CC16]'
+                }`}
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+              <span>Log in</span>
+              <svg className="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </button>
+            </a>
+          </div>
+
+          {/* Mobile Toggle */}
+          <button
+            onClick={() => setIsMobileMenuOpen(true)}
+            className={`lg:hidden p-2 rounded-full transition-colors duration-300 ${showWhiteBg
+                ? 'text-black hover:bg-black/5'
+                : 'text-white hover:bg-white/10'
+              }`}
+          >
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
       </nav>
 
       {/* Mobile Menu Sidebar */}
       {/* Backdrop */}
-      <div 
-        className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-50 transition-opacity duration-300 lg:hidden ${
-          isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
-        }`}
+      <div
+        className={`fixed inset-0 bg-black/60 backdrop-blur-sm z-50 transition-opacity duration-300 lg:hidden ${isMobileMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'
+          }`}
         onClick={() => setIsMobileMenuOpen(false)}
       />
 
       {/* Sidebar Panel */}
-      <div 
-        className={`fixed inset-y-0 right-0 w-full max-w-xs bg-[#0a0a0a] border-l border-white/10 z-50 transform transition-transform duration-300 cubic-bezier(0.16, 1, 0.3, 1) lg:hidden flex flex-col ${
-          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
-        }`}
+      <div
+        className={`fixed inset-y-0 right-0 w-full max-w-xs bg-[#0a0a0a] border-l border-white/10 z-50 transform transition-transform duration-300 cubic-bezier(0.16, 1, 0.3, 1) lg:hidden flex flex-col ${isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+          }`}
       >
         <div className="p-6 flex items-center justify-between border-b border-white/5">
           <span className="text-white font-bricolage font-bold text-xl">Menu</span>
-          <button 
+          <button
             onClick={() => setIsMobileMenuOpen(false)}
             className="p-2 text-white/60 hover:text-white hover:bg-white/5 rounded-full transition-colors"
           >
@@ -161,11 +154,10 @@ const Navbar = () => {
             <Link
               key={link.name}
               to={link.path}
-              className={`mobile-menu-item flex items-center justify-between p-4 rounded-xl text-lg font-medium transition-all ${
-                location.pathname === link.path
+              className={`mobile-menu-item flex items-center justify-between p-4 rounded-xl text-lg font-medium transition-all ${location.pathname === link.path
                   ? 'bg-white text-black'
                   : 'text-white/80 hover:bg-white/5 hover:text-white'
-              }`}
+                }`}
             >
               {link.name}
               {location.pathname === link.path && (

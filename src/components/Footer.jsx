@@ -36,14 +36,14 @@ const Footer = () => {
       {/* Decorative Gradient Background */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#84CC16] to-transparent opacity-60"></div>
 
-      <div className="max-w-7xl mx-auto px-6 pt-12 md:pt-24 pb-8 md:pb-12 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-5 pt-5 md:pt-16 pb-6 md:pb-5 relative z-10">
 
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 mb-10 md:mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 mb-8 md:mb-12">
 
           {/* Brand & Mission - 4 Columns */}
-          <div className="lg:col-span-4 space-y-8">
-            <div className="flex items-center gap-4">
+          <div className="lg:col-span-4 space-y-4">
+            <div className="flex items-center gap-2">
               <img
                 src="/images/AppLogo.png"
                 alt="Animal Kart Logo"
@@ -64,7 +64,7 @@ const Footer = () => {
             </p>
 
             {/* Social Icons */}
-            <div className="flex gap-3 justify-start !mt-10">
+            <div className="flex gap-3 justify-start !mt-6">
               {socialLinks.map((social) => (
                 <a
                   key={social.name}
@@ -84,8 +84,8 @@ const Footer = () => {
           <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 pl-0 lg:pl-20">
             {/* Column 1: Information */}
             <div>
-              <h3 className="text-white font-bold text-lg mb-8 capitalize tracking-tight font-bricolage">Company</h3>
-              <ul className="space-y-5 text-sm text-gray-400">
+              <h3 className="text-white font-bold text-lg mb-4 capitalize tracking-tight font-bricolage">Company</h3>
+              <ul className="space-y-3 text-sm text-gray-400">
                 {[
                   { label: 'About Us', path: '/about' },
                   { label: 'Solution', path: '#solution' },
@@ -119,8 +119,8 @@ const Footer = () => {
 
             {/* Column 2: Helpful Links */}
             <div>
-              <h3 className="text-white font-bold text-lg mb-8 capitalize tracking-tight font-bricolage">Quick Links</h3>
-              <ul className="space-y-5 text-sm text-gray-400">
+              <h3 className="text-white font-bold text-lg mb-4 capitalize tracking-tight font-bricolage">Quick Links</h3>
+              <ul className="space-y-3 text-sm text-gray-400">
                 {[
                   { label: 'Services', path: '/services' },
                   { label: 'Terms & Conditions', path: '/terms' },
@@ -139,7 +139,7 @@ const Footer = () => {
 
             {/* Column 3: Our Services (Location) */}
             <div>
-              <h3 className="text-white font-bold text-lg mb-8 capitalize tracking-tight font-bricolage">Location</h3>
+              <h3 className="text-white font-bold text-lg mb-4 capitalize tracking-tight font-bricolage">Location</h3>
               <div className="flex gap-5 items-start group">
                 <div className="p-3 bg-white/5 rounded-xl border border-white/10 group-hover:border-[#84CC16]/50 transition-colors shrink-0">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6 text-[#84CC16]">
@@ -160,7 +160,7 @@ const Footer = () => {
         </div>
 
         {/* Divider */}
-        <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent mb-8"></div>
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-white/10 to-transparent mb-6"></div>
 
         {/* Bottom Bar */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
