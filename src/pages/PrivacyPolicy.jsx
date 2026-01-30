@@ -70,14 +70,14 @@ const PrivacyPolicy = () => {
             <Navbar />
 
             {/* Hero Section */}
-            <section className="relative py-32 md:py-48 bg-[#0d1117] overflow-hidden">
+            <section className="relative py-32 md:py-48 bg-black overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <img
                         src="/images/heroimg.jpg"
                         alt="Privacy Policy Background"
-                        className="w-full h-full object-cover opacity-20"
+                        className="w-full h-full object-cover bg-black/100 opacity-20"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-b from-[#111827]/50 to-[#111827]" />
+                    <div className="absolute inset-0 bg-gradient-to-b from-black/100 to-black/100" />
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-6">

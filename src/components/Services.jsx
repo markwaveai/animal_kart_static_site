@@ -83,14 +83,14 @@ const Services = () => {
                 
                 {/* Background Grid & Glow */}
                 <div className="absolute inset-0">
-                    <div className="absolute inset-0 bg-[linear-gradient(to_right,#3b82f620_1px,transparent_1px),linear-gradient(to_bottom,#3b82f620_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
-                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-500/10 rounded-full blur-[100px] animate-pulse"></div>
+                    <div className="absolute inset-0 bg-[linear-gradient(to_right,#22c55e20_1px,transparent_1px),linear-gradient(to_bottom,#22c55e20_1px,transparent_1px)] bg-[size:40px_40px] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)]"></div>
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-green-500/10 rounded-full blur-[100px] animate-pulse"></div>
                 </div>
 
                 <div className="relative z-10 container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                     
                     {/* Left: Text Content */}
-                    <div className="text-center md:text-left">
+                    <div className="text-center md:text-left mt-12 md:mt-0">
                          {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-cyan-400 text-xs font-bold tracking-widest uppercase mb-6 animate-in slide-in-from-bottom-4 duration-700">
                             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-ping"></span>
                             Premium Tools
@@ -108,20 +108,20 @@ const Services = () => {
                     <div className="relative h-[400px] w-full flex items-center justify-center">
                         
                         {/* Rotating Gear 1 (Large) */}
-                        <div className="absolute right-10 md:right-20 top-1/2 -translate-y-1/2 w-64 h-64 border-[4px] border-dashed border-blue-500/30 rounded-full animate-spin-slow flex items-center justify-center">
-                            <div className="absolute inset-0 rounded-full border border-blue-500/20"></div>
+                        <div className="absolute right-10 md:right-20 top-1/2 -translate-y-1/2 w-64 h-64 border-[4px] border-dashed border-green-500/30 rounded-full animate-spin-slow flex items-center justify-center">
+                            <div className="absolute inset-0 rounded-full border border-green-500/20"></div>
                         </div>
 
                         {/* Rotating Gear 2 (Small) */}
-                        <div className="absolute right-40 md:right-52 top-1/3 w-32 h-32 border-[4px] border-dashed border-cyan-400/40 rounded-full animate-spin-reverse-slow flex items-center justify-center">
-                             <div className="w-2 h-2 bg-cyan-400 rounded-full"></div>
+                        <div className="absolute right-40 md:right-52 top-1/3 w-32 h-32 border-[4px] border-dashed border-green-400/40 rounded-full animate-spin-reverse-slow flex items-center justify-center">
+                             <div className="w-2 h-2 bg-green-400 rounded-full"></div>
                         </div>
 
                         {/* Central Shield/Check Icon */}
                         <div className="absolute right-20 md:right-28 top-1/2 -translate-y-1/2 z-10">
-                            <div className="relative w-32 h-32 bg-[#0f172a] border-2 border-cyan-400 rounded-2xl rotate-45 shadow-[0_0_40px_rgba(34,211,238,0.3)] flex items-center justify-center overflow-hidden animate-pulse" style={{ animationDuration: '4s' }}>
+                            <div className="relative w-32 h-32 bg-[#0f172a] border-2 border-green-400 rounded-2xl rotate-45 shadow-[0_0_40px_rgba(34,197,94,0.3)] flex items-center justify-center overflow-hidden animate-pulse" style={{ animationDuration: '4s' }}>
                                 <div className="-rotate-45">
-                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-cyan-400 drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
+                                    <svg xmlns="http://www.w3.org/2000/svg" className="h-16 w-16 text-green-400 drop-shadow-lg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                                     </svg>
                                 </div>
@@ -131,8 +131,8 @@ const Services = () => {
                         </div>
 
                          {/* Floating Particles */}
-                        <div className="absolute right-0 top-20 w-3 h-3 bg-blue-400 rounded-full animate-bounce delay-700"></div>
-                        <div className="absolute right-60 bottom-20 w-2 h-2 bg-indigo-400 rounded-full animate-bounce delay-300"></div>
+                        <div className="absolute right-0 top-20 w-3 h-3 bg-green-400 rounded-full animate-bounce delay-700"></div>
+                        <div className="absolute right-60 bottom-20 w-2 h-2 bg-green-400 rounded-full animate-bounce delay-300"></div>
 
                     </div>
                 </div>

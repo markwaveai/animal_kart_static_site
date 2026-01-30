@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Footer = () => {
   const navigate = useNavigate();
@@ -36,10 +36,10 @@ const Footer = () => {
       {/* Decorative Gradient Background */}
       <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#84CC16] to-transparent opacity-60"></div>
 
-      <div className="max-w-7xl mx-auto px-6 pt-24 pb-12">
+      <div className="max-w-7xl mx-auto px-6 pt-12 md:pt-24 pb-8 md:pb-12 relative z-10">
 
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 mb-20">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 md:gap-12 mb-10 md:mb-20">
 
           {/* Brand & Mission - 4 Columns */}
           <div className="lg:col-span-4 space-y-8">
@@ -81,7 +81,7 @@ const Footer = () => {
           </div>
 
           {/* Links Sections */}
-          <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-12 pl-0 lg:pl-20">
+          <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 pl-0 lg:pl-20">
             {/* Column 1: Information */}
             <div>
               <h3 className="text-white font-bold text-lg mb-8 capitalize tracking-tight font-bricolage">Company</h3>
@@ -123,7 +123,7 @@ const Footer = () => {
               <ul className="space-y-5 text-sm text-gray-400">
                 {[
                   { label: 'Services', path: '/services' },
-                  { label: 'Terms & Condition', path: '/terms' },
+                  { label: 'Terms & Conditions', path: '/terms' },
                   { label: 'Privacy Policy', path: '/privacy' }
                 ].map((item) => (
                   <li
@@ -169,8 +169,8 @@ const Footer = () => {
           </div>
 
           <div className="flex gap-8 text-[10px] text-gray-500 uppercase tracking-widest font-bold">
-            <span onClick={() => navigate('/privacy')} className="hover:text-[#84CC16] transition-colors cursor-pointer">Privacy Policy</span>
-            <span onClick={() => navigate('/terms')} className="hover:text-[#84CC16] transition-colors cursor-pointer">Terms of Service</span>
+            <Link to="/privacy" className="hover:text-[#84CC16] transition-colors cursor-pointer">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-[#84CC16] transition-colors cursor-pointer">Terms & Conditions</Link>
           </div>
         </div>
 

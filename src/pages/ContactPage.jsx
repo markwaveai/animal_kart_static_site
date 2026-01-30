@@ -25,12 +25,12 @@ const ContactPage = () => {
                 <div className="relative z-10 container mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
                     
                     {/* Left: Text Content */}
-                    <div className="text-center md:text-left">
+                    <div className="text-center md:text-left  mt-12 md:mt-0">
                         {/* <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-bold tracking-widest uppercase mb-6 animate-in slide-in-from-bottom-4 duration-700">
                             <span className="w-2 h-2 rounded-full bg-green-400 animate-ping"></span>
                             Live Support
                         </div> */}
-                        <h1 className="text-5xl md:text-7xl font-black text-white mb-6 tracking-tight leading-none animate-in slide-in-from-bottom-8 duration-700 delay-100">
+                        <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white mb-6 tracking-tight leading-none animate-in slide-in-from-bottom-8 duration-700 delay-100">
                             GET <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-emerald-300">CONNECTED</span>
                         </h1>
                         <p className="text-gray-300 text-lg md:text-xl max-w-lg mx-auto md:mx-0 leading-relaxed animate-in slide-in-from-bottom-8 duration-700 delay-200">
@@ -57,7 +57,7 @@ const ContactPage = () => {
 
                         {/* Floating Devices */}
                         {/* Mobile Phone */}
-                        <div className="absolute left-10 md:left-0 top-1/2 -translate-y-1/2 w-32 h-60 bg-[#064e3b] border-4 border-green-500/50 rounded-[2rem] shadow-[0_0_30px_rgba(74,222,128,0.3)] flex flex-col items-center justify-between p-4 animate-bounce" style={{ animationDuration: '3s' }}>
+                        <div className="absolute left-0 md:left-0 top-1/2 -translate-y-1/2 w-32 h-60 bg-[#064e3b] border-4 border-green-500/50 rounded-[2rem] shadow-[0_0_30px_rgba(74,222,128,0.3)] flex flex-col items-center justify-between p-4 animate-bounce scale-90 md:scale-100" style={{ animationDuration: '3s' }}>
                             <div className="w-12 h-1 bg-green-800 rounded-full"></div>
                             <div className="space-y-2 w-full">
                                 <div className="w-full h-2 bg-green-900 rounded-full"></div>
@@ -69,7 +69,7 @@ const ContactPage = () => {
                         </div>
 
                         {/* Headphones */}
-                        <div className="absolute right-10 md:right-0 top-1/2 -translate-y-1/2 w-40 h-40 border-[6px] border-emerald-400/50 rounded-full border-b-transparent flex items-center justify-center animate-pulse" style={{ animationDuration: '4s' }}>
+                        <div className="absolute right-0 md:right-0 top-1/2 -translate-y-1/2 w-40 h-40 border-[6px] border-emerald-400/50 rounded-full border-b-transparent flex items-center justify-center animate-pulse scale-90 md:scale-100" style={{ animationDuration: '4s' }}>
                             {/* Ear cups */}
                             <div className="absolute left-[-10px] bottom-2 w-8 h-12 bg-[#064e3b] border items-center justify-center rounded-lg border-emerald-400 shadow-[0_0_20px_rgba(52,211,153,0.4)]"></div>
                             <div className="absolute right-[-10px] bottom-2 w-8 h-12 bg-[#064e3b] border items-center justify-center rounded-lg border-emerald-400 shadow-[0_0_20px_rgba(52,211,153,0.4)]"></div>

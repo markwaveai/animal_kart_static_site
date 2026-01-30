@@ -6,15 +6,15 @@ const Hero = () => {
   return (
     <section ref={containerRef} className="relative h-screen w-full flex items-end justify-start overflow-hidden">
         <div 
-            className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/images/hro.jpeg')" }}
+            className="absolute inset-0 z-0 bg-cover bg-center lg:bg-[center_20%] bg-no-repeat"
+            style={{ backgroundImage: "url('/images/image.png')" }}
         >
             {/* Overlays removed for full clarity */}
         </div>
 
         {/* Content Container */}
-        <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-12 pb-24 md:pb-32">
-            <div className="max-w-4xl">
+        <div className="relative z-10 w-full mx-auto px-6 md:px-12 pb-24 md:pb-32">
+            <div className="max-w-5xl">
                 {/* Badge */}
                 {/* <div className="inline-flex items-center gap-3 px-4 py-2 mb-8 rounded-full bg-white/5 border border-white/10 backdrop-blur-sm animate-in fade-in slide-in-from-bottom-8 duration-1000"> */}
                     {/* <span className="w-1.5 h-1.5 rounded-full bg-[#84CC16] animate-pulse"></span> */}

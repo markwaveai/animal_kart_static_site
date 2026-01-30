@@ -93,13 +93,13 @@ const TermsPage = () => {
 
             {/* Hero Section */}
             <section className="relative py-32 md:py-48 ">
-                <div className="absolute inset-0 z-0">
+                <div className="absolute  bg-[#0d1117] inset-0 z-0">
                     <img
                         src="/images/terms.jpg"
                         alt="Terms Background"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full  object-cover"
                     />
-                    <div className="absolute inset-0 bg-black/50" />
+                    <div className="absolute inset-0 bg-black/100" />
                 </div>
 
                 <div className="relative z-10 max-w-7xl mx-auto px-6">
